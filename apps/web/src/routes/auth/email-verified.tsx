@@ -30,7 +30,7 @@ function EmailVerifiedComponent() {
 						Your email address has been successfully verified.
 					</CardDescription>
 				</CardHeader>
-				<CardContent>
+				<CardContent className="space-y-4">
 					<div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
 						<CheckCircle className="h-4 w-4 text-primary" />
 						<p>You can now sign in to your account.</p>

@@ -76,7 +76,7 @@ function ForgotPasswordComponent() {
 							We've sent a password reset link to your email
 						</CardDescription>
 					</CardHeader>
-					<CardContent>
+					<CardContent className="space-y-4">
 						<Alert>
 							<AlertDescription>
 								Click the link in the email to reset your password. If you don't
@@ -84,7 +84,7 @@ function ForgotPasswordComponent() {
 							</AlertDescription>
 						</Alert>
 					</CardContent>
-					<CardFooter>
+					<CardFooter className="pt-6">
 						<Button
 							variant="outline"
 							className="w-full"

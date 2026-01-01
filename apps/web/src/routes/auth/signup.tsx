@@ -123,7 +123,7 @@ function SignUpComponent() {
 							see the email, check your spam folder.
 						</p>
 					</CardContent>
-					<CardFooter className="flex flex-col space-y-2">
+					<CardFooter className="flex flex-col space-y-4 pt-6">
 						<Button
 							variant="outline"
 							className="w-full"
