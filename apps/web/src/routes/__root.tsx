@@ -31,7 +31,6 @@ function RootComponent() {
     <>
       <HeadContent />
       <Outlet />
-      <TanStackRouterDevtools position="bottom-left" />
     </>
   );
 }

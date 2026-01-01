@@ -9,7 +9,7 @@ function HomeComponent() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1>Home</h1>
-      <Button variant="outline">Click me</Button>
+      <Button>Click me</Button>
     </div>
   );
 }
