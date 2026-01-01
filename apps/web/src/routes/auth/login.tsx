@@ -137,7 +137,7 @@ function LoginComponent() {
 								</p>
 							)}
 						</div>
-						<div className="flex items-center space-x-2">
+						<div className="flex items-center space-x-2 pb-2">
 							<input
 								type="checkbox"
 								id="remember"
@@ -153,7 +153,7 @@ function LoginComponent() {
 							</Label>
 						</div>
 					</CardContent>
-					<CardFooter className="flex flex-col space-y-4">
+					<CardFooter className="flex flex-col space-y-4 pt-6">
 						<Button type="submit" className="w-full" disabled={isLoading}>
 							{isLoading ? (
 								<>
