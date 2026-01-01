@@ -29,7 +29,7 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
 function RootComponent() {
   return (
     <>
-      <HeadContent />
+      <HeadContent />  
       <Outlet />
     </>
   );
