@@ -1,0 +1,3 @@
+{
+  "extends": "@ino-trips/config/tsconfig.base.json"
+}
