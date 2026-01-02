@@ -52,6 +52,8 @@ function LoginComponent() {
 			},
 			{
 				onSuccess: () => {
+					// Redirect will be handled by the home page based on user type
+					navigate({ to: "/" });
 					setIsLoading(false);
 				},
 				onError: (ctx) => {

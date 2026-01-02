@@ -1,6 +1,7 @@
 import { createClient, type GenericCtx } from "@convex-dev/better-auth";
 import { convex, crossDomain } from "@convex-dev/better-auth/plugins";
 import { betterAuth } from "better-auth";
+import { v } from "convex/values";
 import { components } from "./_generated/api";
 import type { DataModel } from "./_generated/dataModel";
 import { query } from "./_generated/server";
@@ -61,5 +62,26 @@ export const getCurrentUser = query({
 	args: {},
 	handler: async (ctx) => {
 		return await authComponent.safeGetAuthUser(ctx);
+	},
+});
+
+export const getUserById = query({
+	args: {
+		userId: v.string(),
+	},
+	handler: async (ctx, args) => {
+		// Try querying by _id first (most common case)
+		let user = await ctx.runQuery(components.betterAuth.adapter.findOne, {
+			model: "user",
+			where: [
+				{
+					field: "_id",
+					operator: "eq",
+					value: args.userId,
+				},
+			],
+		});
+				
+		return user;
 	},
 });
